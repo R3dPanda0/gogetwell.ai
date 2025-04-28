@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --output public",
+    "build": "vite build --outDir dist",
+    "prebuild": "mkdir -p dist"
     "preview": "vite preview",
     "prettier": "npx prettier src --check",
     "prettier:fix": "npm run prettier -- --write",
