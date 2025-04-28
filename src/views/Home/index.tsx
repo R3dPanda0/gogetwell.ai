@@ -17,7 +17,7 @@ const Home = (): JSX.Element => {
 	};
 
 	useEffect(() => {
-		let lastScrollTop = 0; // Initialize lastScrollTop variable
+		let lastScrollTop = 0;
 
 		const handleScroll = () => {
 			const hcf = document.querySelector(".hcf-profile");
@@ -38,10 +38,10 @@ const Home = (): JSX.Element => {
 		};
 
 
-		// Add scroll event listener
+
 		window.addEventListener("scroll", handleScroll);
 
-		// Cleanup the event listener on unmount
+
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
