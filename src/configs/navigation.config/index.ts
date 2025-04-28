@@ -9,7 +9,7 @@ import type { NavigationTree } from '@/@types/navigation'
 const navigationConfig: NavigationTree[] = [
     {
         key: 'home',
-        path: '/home',
+        path: '/',
         title: 'Home',
         translateKey: 'nav.home',
         icon: 'home',
